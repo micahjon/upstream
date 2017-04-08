@@ -1,0 +1,21 @@
+/* Colors: */
+/* Gray: #F4F7F7 */
+/* Light Green: #AACFD0 */
+/* Medium Green: #5DA0A2 */
+/* Dark Green: #34495E */
+
+/* General styles */
+a { 
+	text-decoration: none; 
+	color: #5DA0A2;
+}
+
+/* Stripe.com buttons styles */
+.btn {
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	border: 0 !important;
+}
+.btn:hover, .btn:focus {
+	transform: translateY(-1px);
+	transition: all .15s ease;
+}

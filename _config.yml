@@ -1,0 +1,39 @@
+---
+title: Upstream Landing Page
+timezone: America/New_York
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: default
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: drafts
+  values:
+    layout: post
+markdown: kramdown
+highlighter: rouge
+paginate: 20
+baseurl: "/"
+domain_name: http://upstreamapp.io
+prose:
+  media: assets/images
+url: http://upstreamapp.io
+author: Micah Miller-Eshleman
+authorTwitter: YourTwitterUsername
+permalink: "/:year/:title/"
+gems:
+- jekyll-redirect-from
