@@ -11,11 +11,57 @@ a {
 }
 
 /* Stripe.com buttons styles */
-.btn {
+.btn:not(.btn-link) {
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 	border: 0 !important;
 }
 .btn:hover, .btn:focus {
 	transform: translateY(-1px);
 	transition: all .15s ease;
+}
+
+/* Top nav */
+.nav {
+	padding: 8px 0;
+	background: #5DA0A2;
+}
+.nav__container {
+	display: flex;
+	align-items:flex-start;
+}
+.nav__logo {
+	display: inline-block;
+	width: 1em;
+	height: 1.2em;
+	fill: currentColor;
+	vertical-align: middle;
+	margin: 5px 5px 0 0;
+}
+.nav__title {
+	font-size: 18px;
+	margin: 1px auto -1px 0 ;
+	line-height: 1.8125;
+}
+.nav__beta {
+}
+.nav__btn:not(.btn-primary) {
+	color: white;
+	text-decoration: none !important;
+}
+/* Top nav: narrow phones */
+@media (max-width: 359px) {
+	.nav__logo {
+		height: 1em;
+	}
+	.nav__title {
+		font-size: 16px;
+	}
+	.nav__btn {
+		font-size: 12px;
+	}
+}
+@media (max-width: 400px) { 
+	.nav__btn:not(.btn-primary) {
+		padding: 6px;
+	}
 }

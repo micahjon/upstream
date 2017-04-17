@@ -16,14 +16,16 @@
 	<link rel="alternate" type="application/rss+xml" title="My Blog" href="{{ site.baseurl }}rss.xml">
 </head>
 <body>
-	<nav class="container">
-		<div class="row">
-			<div class="col-xs-4">Upstream</div>
-			<div class="col-xs-8">
-				<a href="#" class="btn">Docs</a>
-				<a href="#" class="btn">Sign-in</a>
-				<a href="#" class="btn btn-primary">Try it out</a>
-			</div>
+	<nav class="nav">
+		<div class="container nav__container">
+			<svg class="nav__logo" viewBox="0 0 32 32">
+				<title>Upstream logo</title>
+				<path d="M16 0l-10 16 10 16 10-16z"></path>
+			</svg>
+			<h1 class="nav__title">Upstream <sup class="nav__beta">Beta</sup></h1>
+			<a href="#" class="nav__btn btn btn-link">Docs</a>
+			<a href="#" class="nav__btn btn btn-link">Sign in</a>
+			<a href="#" class="nav__btn btn btn-primary">Sign up</a>
 		</div>
 	</nav>
 
