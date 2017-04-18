@@ -20,6 +20,18 @@ a {
 	transition: all .15s ease;
 }
 
+/* Typography */
+@media (max-width: 600px) { 
+	body {
+		font-size: 16px; /* Instead of 18px */
+	}
+}
+
+/* General layout */
+.container {
+	max-width: 700px;
+}
+
 /* Top nav */
 .nav {
 	padding: 8px 0;
