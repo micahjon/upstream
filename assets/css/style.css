@@ -79,9 +79,40 @@ a {
 	}
 }
 
-/* top homepage section */
-.home-section-1 {
+/* homepage sections */
+.home-section--1 {
 	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-	padding-bottom: 1em;
+	padding-bottom: 3em;
+}
+.home-section--white p {
+
+}
+.home-separator {
+	display: block;
+	background: transparent;
+	transform: scale(-1,1);
+	height: 2em;
+	margin-top: -2em;
 	margin-bottom: 1em;
+}
+@media (min-width: 600px) {
+	.home-section--1 { 
+		padding-bottom: 4em;
+	}
+	.home-separator { 
+		height: 3em;
+		margin-top: -3em;
+	}
+}
+@media (min-width: 1000px) {
+	.home-separator { 
+		height: 4em;
+		margin-top: -4em;
+	}
+}
+@media (min-width: 1200px) {
+	.home-separator { 
+		height: 5em;
+		margin-top: -5em;
+	}
 }
