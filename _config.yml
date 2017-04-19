@@ -1,7 +1,6 @@
 ---
 title: Upstream Landing Page
 timezone: America/New_York
-copyright: Upstream
 collections:
   posts:
     title: Posts

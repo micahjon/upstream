@@ -23,22 +23,29 @@ isFluid: true
 
 <div class="home-section home-section--white">
 	<div class="container">
-		<p>Upstream takes the best pieces of stream processing and puts them in a single place. We provide a simple interface for creating channels of events, filtering and aggregation transformations, live updating charts, and creating external responses such as sending emails or triggering webhooks. All that takes a few minutes, tops.
-		</p>
-		<p><a href="#" class="btn btn-primary">Try it out</a></p>
-		<h2>Don’t go alone</h2>
-		<p>Upstream was built to make sharing streams of data with others a cinch. You can make as many public channels as you like, allowing anyone to see your visuals or even fork the channel for themselves.</p>
-		<h3>Embed Charts</h3>
-		<img src="/upstream/assets/chart.png">
+		<p>Upstream takes the best pieces of stream processing and puts them in a single place. We provide a simple interface for creating channels of events, filtering and aggregation transformations, live updating charts, and creating external responses such as sending emails or triggering webhooks. All that takes a few minutes, tops.</p>
+
+		<h2>1. Create your stream</h2>
+		<p>Just <a href="#">sign up</a> and start firing POST requests.</p>
 		<pre class="code"><code>$ cat data.json | curl \
   -H "Content-Type: application/json" \
   -X POST \
   -d @- \
   https://api.upstreamapp.io/hook/YOUR_SECRET_KEY</code></pre>
+
+  		<h2>2. Transform, Filter and Aggregate</h2>
+  		<p>Login to upstream to see your data in real time and apply transformations</p>
+  		<p><em>How to illustrate this?</em></p>
+		
+
+  		<h3>3. Don't go alone</h3>
+  		<p>Upstream was built to make sharing streams of data with others a cinch. You can make as many public channels as you like, allowing anyone to see your visuals or even fork the channel for themselves.</p>
+		<img src="/upstream/assets/chart.png">
 		<p>If you want to keep streams to yourself, make them private and give fine-grain access to other users.</p>
-		<h2>Join the beta</h2>
+		
+		<h2>Join the beta!</h2>
 		<p>Upstream is getting started, we are constantly improving and value your feedback. Making an account with unlimited public channels is free (and always will be), but we also plan on offering pricing options once we leave beta.</p>
-		<p><a href="#" class="btn btn-primary">Try it out</a></p>
+		<p><a href="#" class="btn btn-primary">Sign up</a> <a href="#" class="btn">View Documentation</a></p>
 
 	</div>
 </div>
