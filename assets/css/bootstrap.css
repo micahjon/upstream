@@ -8,6 +8,13 @@
 /* Light Green: #AACFD0 */
 /* Medium Green: #5DA0A2 */
 /* Dark Green: #34495E */
+.code {
+  background: #34495E;
+  color: white;
+  padding: 10px 20px 10px 16px;
+  border-left: 4px solid #96e6a1;
+  font-size: 16px; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;

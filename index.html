@@ -30,9 +30,11 @@ isFluid: true
 		<p>Upstream was built to make sharing streams of data with others a cinch. You can make as many public channels as you like, allowing anyone to see your visuals or even fork the channel for themselves.</p>
 		<h3>Embed Charts</h3>
 		<img src="/upstream/assets/chart.png">
-		<pre><code>
-some code here..
-		</code></pre>
+		<pre class="code"><code>$ cat data.json | curl \
+  -H "Content-Type: application/json" \
+  -X POST \
+  -d @- \
+  https://api.upstreamapp.io/hook/YOUR_SECRET_KEY</code></pre>
 		<p>If you want to keep streams to yourself, make them private and give fine-grain access to other users.</p>
 		<h2>Join the beta</h2>
 		<p>Upstream is getting started, we are constantly improving and value your feedback. Making an account with unlimited public channels is free (and always will be), but we also plan on offering pricing options once we leave beta.</p>

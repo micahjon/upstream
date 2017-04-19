@@ -34,6 +34,18 @@ $btn-primary-bg:  		$brand-primary;
 
 $grid-gutter-width: 40px;
 
+$green-light: 	#d4fc79; 
+$green-dark:	#96e6a1;
+
+.code {
+	background: $brand-primary;
+	color: white;
+	padding: $grid-gutter-width/4 $grid-gutter-width/2 $grid-gutter-width/4 ($grid-gutter-width/2 - 4);
+	border-left: 4px solid $green-dark;
+	font-size: 16px;
+}
+
+
 // Reset and dependencies
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
 // @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print";
