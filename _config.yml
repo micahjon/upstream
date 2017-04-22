@@ -28,6 +28,7 @@ markdown: kramdown
 highlighter: rouge
 paginate: 20
 baseurl: "/upstream/"
+name: "Upstream"
 domain_name: http://upstreamapp.io
 links:
   docs: https://hertzlersystems.atlassian.net/wiki/display/UD/Getting+Started
@@ -38,8 +39,8 @@ links:
 prose:
   media: assets/images
 url: http://upstreamapp.io
-author: Micah Miller-Eshleman
-authorTwitter: YourTwitterUsername
+# author: Micah Miller-Eshleman
+# authorTwitter: YourTwitterUsername
 permalink: "/:year/:title/"
 gems:
 - jekyll-redirect-from
