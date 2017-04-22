@@ -5,7 +5,7 @@ isFluid: true
 	<div class="container">
 		<h1>Stream processing, for&nbsp;humans.</h1>
 		<p style="margin-top: -1em; max-width: 400px;">Upstream makes stream processing both approachable and collaborative</p>
-		<p><a href="#" class="btn btn-primary">Join the beta!</a></p>
+		<p><a href="{{ site.page_signup }}" class="btn btn-primary">Join the beta!</a></p>
 	</div>
 </div>
 
@@ -13,64 +13,83 @@ isFluid: true
 		<path d="M0 0 C 50 100 80 100 100 0 L 100 101 0 101 Z" fill="#96e6a1"></path><path d="M0 10 C 50 100 80 100 103 0 L 100 101 0 101 Z" fill="#fff"></path>
 </svg>
 
-<!-- <svg class="home-separator" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-		<path d="M0 0 C 50 100 80 100 100 0 L 100 101 0 101 Z" fill="#fff"></path>
-</svg> -->
-
-<!-- <svg class="home-separator" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-	<path d="M0 100 C 20 0 50 0 100 100 L 100 -1 0 -1 Z" fill="#fff"></path>
-</svg> -->
-
 <div class="home-section home-section--white">
 	<div class="container">
 		<p>Upstream takes the best pieces of stream processing and puts them in a single place. We provide a simple interface for creating channels of events, filtering and aggregation transformations, live updating charts, and creating external responses such as sending emails or triggering webhooks. All that takes a few minutes, tops.</p>
 
-		<h2>1. Create your stream</h2>
-		<p>Just <a href="#">sign up</a> and start firing POST requests.</p>
-		<pre class="code"><code>$ cat data.json | curl \
+		<br>
+		<h2>Create your stream</h2>
+		<p>Just <a href="{{ site.page_signup }}">sign up</a> with either an email or a google account, create a channel, and start firing POST requests.</p>
+		
+		<pre class="code"><code>$ curl \
   -H "Content-Type: application/json" \
   -X POST \
-  -d @- \
+  -d '{"cpu":".23","memory":".13","load":"4"}'
   https://api.upstreamapp.io/hook/YOUR_SECRET_KEY</code></pre>
 
-  		<h2>2. Transform, Filter and Aggregate</h2>
-  		<p>Login to upstream to see your data in real time and apply transformations</p>
-  		<p><em>How to illustrate this?</em></p>
-		
+  		<p>Even if you don’t have your own data sources, you can also subscribe to channels that are public, or you have been given access to. Or just check out public channels that others have made, no account required.</p>
 
-  		<h3>3. Don't go alone</h3>
-  		<p>Upstream was built to make sharing streams of data with others a cinch. You can make as many public channels as you like, allowing anyone to see your visuals or even fork the channel for themselves.</p>
-		<img src="/upstream/assets/chart.png">
-		<p>If you want to keep streams to yourself, make them private and give fine-grain access to other users.</p>
-		
+  		<br>
+  		<h2>Transform, Filter and Aggregate</h2>
+  		<p>Apply a diverse set of transformations to your events. Filter on one or more conditions, calculate grouped aggregates, or create rolling windows. All applied in real time.</p>
+  		<p>Then visualize your events using several different...</p>
+
+  		<figure class="chart">
+  			<div class="chart__aspect-ratio">
+  				<iframe class="chart__iframe" scrolling='no' frameBorder='0' src='https://embed.upstreamapp.io/?profile=lucasmg&channel=upstream-monitor&visual=CPU History'></iframe>
+  			</div>
+  		</figure>
+  		
+  		<p>For private channels, you can also create external triggers, such as email alerts or https requests.</p>
+  		
+  		<br>
 		<h2>Join the beta!</h2>
-		<p>Upstream is getting started, we are constantly improving and value your feedback. Making an account with unlimited public channels is free (and always will be), but we also plan on offering pricing options once we leave beta.</p>
-		<p><a href="#" class="btn btn-primary">Sign up</a> <a href="#" class="btn">View Documentation</a></p>
+		<p>Upstream is getting started, <strong>we are constantly improving and value your feedback</strong>. Making an account with unlimited public channels is free (and always will be), but we also plan on offering pricing options once we leave beta.</p>
+		<!-- <table>
+			<tr>
+				<th></th>
+				<th>Free</th>
+				<th>Premium</th>
+			</tr>
+			<tr>
+				<td>Real-time Visuals</td>
+				<td>Unlimited</td>
+				<td>Unlimited</td>
+			</tr>
+			<tr>
+				<td>Data Transforms</td>
+				<td>Unlimited</td>
+				<td>Unlimited</td>
+			</tr>
+			<tr>
+				<td>Public Channels</td>
+				<td>Unlimited</td>
+				<td>Unlimited</td>
+			</tr>
+			<tr>
+				<td>Private Channels</td>
+				<td>1</td>
+				<td>Unlimited</td>
+			</tr>
+			<tr>
+				<td>External Triggers</td>
+				<td>On private channels</td>
+				<td>Unlimited</td>
+			</tr>
+		</table> -->
+		<p>During the beta, you can also make a <strong>free private channel</strong> when you sign up for an account!</p>
+		<p>
+			<a href="{{ sites.links.signup }}" class="btn btn-primary">Sign up</a>
+			<a href="{{ sites.links.docs }}" class="btn btn-default">View Documentation</a>
+			<a href="{{ sites.links.contact }}" class="btn btn-default">Email Us</a>
+		</p>
 
 	</div>
 </div>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<div class="home-section home-section--white">
-	<div class="container">
-		<h2>Unlock your data</h2>
-		<p>Everyday you have things you need to monitor whether it’s internal metrics, sensor readings, supplier data, or anything else. With Upstream, you can capture all those data streams in one location, automate monitoring, and easily share the results; all in real time. Instead of batch monitoring them all throughout your busy day, save time rest easy knowing that Upstream is handling the monitoring for you.</p>
-		<h2>Visualize your data:</h2>
-		<p>Your stream comes into Upstream and immediately updates any visualizations you have set up. No need to wait for processing or even refresh the chart. And if a friend, coworker, or supervisor, needs access to the information, share it with them! Or even share it to the public at large! They’ll have the same real-time knowledge that you do.</p>
-		<p><a href="#" class="btn btn-primary">Try it out</a></p>
-	</div>
-</div>
-<div class="home-section home-section--white">
-	<div class="container">
-		<h2>Open the valve:</h2>
-		<p>Create a new stream, define the fields, and start pushing data through a webhook. </p>
-		<h2>Build your pipeline:</h2>
-		<p>Filter, group, and aggregate in real time! Adding transforms is pretty simple, and you can stack and combine them to get the data you want. For example, you can filter out extraneous events, group the data by location, and then average each location. We don’t make any assumptions about your data so you can define what you want to happen. 
-		</p>
-		<h2>The human connection:</h2>
-		<p>In order to make the data more approachable, we provide tools to visualize the data. Create a visualization that makes sense for your events. And then watch them update in real time as events stream through. You can also create triggers for events, firing off an email for events that are out of range, or using a webhook to integrate with another system. 
-		</p>
-		<p><a href="#" class="btn btn-primary">Try it out</a></p>
-	</div>
+
+<div class="container social-sharing">
+	<br>
+	<h2>Spread the word</h2>
+	<p>Thanks for sharing! You can also <a href="#">read the Hacker News discussion here</a>.</p>
+	{% include share.html %}
 </div>

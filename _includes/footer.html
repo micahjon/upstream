@@ -1,5 +1,11 @@
 <footer class="footer gradient-bg">
 	<div class="container">
-		<p><small>© {{ site.time | date: '%Y' }} Upstream, an experiment by <a href="http://www.hertzler.com/">Hertzler Systems</a></small></p>
+		<p>
+			<a href="{{ site.baseurl }}" class="btn btn-link">Upstream</a>
+			<a href="{{ site.links.docs }}" class="btn btn-link">Documentation</a>
+			<a href="{{ site.links.privacy }}" class="btn btn-link">Privacy Policy</a>
+			<a href="{{ site.links.contact }}" class="btn btn-link">Contact Us</a>
+		</p>
+		<p><small>© {{ site.time | date: '%Y' }} Upstream, an experiment by <a href="http://www.hertzler.com/">Hertzler&nbsp;Systems</a>.</small></p>
 	</div>
 </footer>

@@ -12,7 +12,7 @@ a {
 
 /* Stripe.com buttons styles */
 .btn:not(.btn-link) {
-	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	box-shadow: 0 3px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 	border: 0 !important;
 }
 .btn:hover, .btn:focus {
@@ -33,6 +33,12 @@ a {
 }
 .gradient-bg {
 	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.gradient-bg a:not(.btn-primary) {
+	color: inherit;
+}
+.main {
+	margin-bottom: 60px;
 }
 
 /* Top nav */
@@ -57,10 +63,7 @@ a {
 	line-height: 1.8125;
 }
 .nav__beta {
-}
-.nav__btn:not(.btn-primary) {
-	color: inherit;
-	text-decoration: none !important;
+	text-transform: uppercase;
 }
 /* Top nav: narrow phones */
 @media (max-width: 359px) {
@@ -117,7 +120,59 @@ a {
 	}
 }
 
+/* Embedded chart (preserves aspect ratio irregardless of width) */
+.chart {
+	margin: 1em -20px;
+	padding-bottom: .5em;
+}
+.chart__aspect-ratio {
+	position: relative;
+	padding-bottom: 66%;
+	width: 100%;
+}
+.chart__iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@media (min-width: 420px) {
+	.chart {
+		margin: 1em 0;
+		padding: .5em;
+		box-shadow: 0 3px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	}
+}
+@media (min-width: 800px) {
+	.chart {
+		margin: 1em -2em;
+		padding: 1em 2em;
+		border-radius: 3px;
+	}
+}
+
+/* Social sharing buttons */
+.social {
+
+}
+.social__icon {
+	width: 1.5em;
+	margin-bottom: -5px;
+}
+.social__btn {
+	color: white !important;
+}
+
 /* Footer */
 .footer {
-	padding: 20px 0 0;
+	padding: 40px 0;
+	text-align: center;
+}
+.footer a {
+	text-decoration: underline;
+	opacity: .8;
+}
+.footer a:hover, .footer a:focus {
+	opacity: 1;
 }

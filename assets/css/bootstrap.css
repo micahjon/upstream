@@ -13,7 +13,8 @@
   color: white;
   padding: 10px 20px 10px 16px;
   border-left: 4px solid #96e6a1;
-  font-size: 16px; }
+  font-size: 16px;
+  border-radius: 3px; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {

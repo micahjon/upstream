@@ -22,16 +22,18 @@
 				<title>Upstream logo</title>
 				<path d="M16 0l-10 16 10 16 10-16z"></path>
 			</svg>
-			<h1 class="nav__title">Upstream <sup class="nav__beta">Beta</sup></h1>
-			<a href="#" class="nav__btn btn btn-link">Docs</a>
-			<a href="#" class="nav__btn btn btn-link">Sign in</a>
-			<a href="#" class="nav__btn btn btn-primary">Sign up</a>
+			<h1 class="nav__title"><a href="{{ site.baseurl }}">Upstream <sup class="nav__beta">Beta</sup></a></h1>
+			<a href="{{ site.links.docs }}" class="nav__btn btn btn-link">Docs</a>
+			<a href="{{ site.links.login }}" class="nav__btn btn btn-link">Log in</a>
+			<a href="{{ site.links.signup }}" class="nav__btn btn btn-primary">Sign up</a>
 		</div>
 	</nav>
 
-	<main id="main" class="{% unless page.isFluid %}container{% endunless %}">
+	<main id="main" class="main {% unless page.isFluid %}container{% endunless %}">
 		{{content}}
 	</main>
+
+	
 
 	{% include footer.html %}
 

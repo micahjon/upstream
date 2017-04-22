@@ -22,20 +22,17 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
+$green-light: 	#d4fc79; 
+$green-dark:	#96e6a1;
+
 $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 
 $brand-primary:         #34495E; //darken(#428bca, 6.5%) !default; // #337ab7
 $btn-primary-bg:  		$brand-primary;
-// $btn-primary-border: 	darken($brand-primary, 6.5%);
-// 
-// 
 
 $grid-gutter-width: 40px;
-
-$green-light: 	#d4fc79; 
-$green-dark:	#96e6a1;
 
 .code {
 	background: $brand-primary;
@@ -43,6 +40,7 @@ $green-dark:	#96e6a1;
 	padding: $grid-gutter-width/4 $grid-gutter-width/2 $grid-gutter-width/4 ($grid-gutter-width/2 - 4);
 	border-left: 4px solid $green-dark;
 	font-size: 16px;
+	border-radius: 3px;
 }
 
 

@@ -29,6 +29,12 @@ highlighter: rouge
 paginate: 20
 baseurl: "/upstream/"
 domain_name: http://upstreamapp.io
+links:
+  docs: https://hertzlersystems.atlassian.net/wiki/display/UD/Getting+Started
+  login: https://api.upstreamapp.io/login?redirect=https://www.upstreamapp.io/
+  signup: https://api.upstreamapp.io/signup
+  privacy: https://hertzlersystems.atlassian.net/wiki/display/UD/Upstream+Privacy+Policy
+  contact: mailto:upstreamapp.io@gmail.com
 prose:
   media: assets/images
 url: http://upstreamapp.io
