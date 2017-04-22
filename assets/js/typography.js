@@ -1,3 +1,6 @@
+/**
+ * Generate typography.css file with solid Typographic defaults
+ */
 import Typography from 'typography'
 import CodePlugin from 'typography-plugin-code'
 

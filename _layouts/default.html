@@ -7,11 +7,10 @@
 
 	<title>{% if page.title %}{{ page.title }}  · {% endif %}{{ site.name }}</title>
 	<link rel="shortcut icon" href="{{ site.baseurl }}assets/images/favicon.ico">
-	<!-- <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css"> -->
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:700|Noto+Sans:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="{{ site.baseurl }}assets/css/typography.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}assets/css/bootstrap.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css">
+
+	<style type="text/css">
+		{% include all-styles.css %}
+	</style>	
 
 	<link rel="alternate" type="application/rss+xml" title="My Blog" href="{{ site.baseurl }}rss.xml">
 </head>
@@ -33,10 +32,7 @@
 		{{content}}
 	</main>
 
-	
-
 	{% include footer.html %}
 
-	<script async src="{{ site.baseurl }}assets/js/main.js?v=0"></script>
 </body>
 </html>
