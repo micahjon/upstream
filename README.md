@@ -5,9 +5,7 @@
 - brew update
 - brew install ruby
 
-- which ruby
-- which gem
-(just to ensure they're both in /usr/local/bin)
+ruby and gem should now be located in /usr/local/bin/
 
 Restart terminal, then...
 
