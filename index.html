@@ -16,11 +16,14 @@ title: Stream processing, for humans
 
 <div class="home-section home-section--white">
 	<div class="container">
-		<p>Upstream takes the best pieces of stream processing and puts them in a single place. We provide a simple interface for creating channels of events, filtering and aggregation transformations, live updating charts, and creating external responses such as sending emails or triggering webhooks. All that takes a few minutes, tops.</p>
-
+		
+		<p>Upstream is the new service for building stream pipelines. Whether you are tracking device heartbeats, service metrics, manufacturing line outputs, river quality, or keeping track of any other changing environment, we provide a simple set of building blocks that you can use to massage, monitor, or publish event streams.</p>
+		
+		<p><em>And getting started takes a few minutes, tops!</em></p>
+		
 		<br>
 		<h2>Create your stream</h2>
-		<p>Just <a href="{{ site.page_signup }}">sign up</a> with either an email or a google account, create a channel, and start firing POST requests.</p>
+		<p>Just <a href="{{ site.page_signup }}">sign up</a> with an email or a Google account, create a channel, and start firing POST requests.</p>
 		
 		<pre class="code"><code>$ curl \
   -H "Content-Type: application/json" \
@@ -28,12 +31,13 @@ title: Stream processing, for humans
   -d '{"cpu":".23","memory":".13","load":"4"}'
   https://api.upstreamapp.io/hook/YOUR_SECRET_KEY</code></pre>
 
-  		<p>Even if you don’t have your own data sources, you can also subscribe to channels that are public, or you have been given access to. Or just check out public channels that others have made, no account required.</p>
+  		<p>Even if you don’t have your own data sources, you can subscribe to channels that others have created. Or view public channels with no account required.</p>
 
   		<br>
   		<h2>Transform, Filter and Aggregate</h2>
-  		<p>Apply a diverse set of transformations to your events. Filter on one or more conditions, calculate grouped aggregates, or create rolling windows. All applied in real time.</p>
-  		<p>Then visualize your events using several different...</p>
+  		<p>Apply a diverse set of transformations to your events. Filter on one or more conditions, calculate grouped aggregates, or create rolling windows&mdash;all updated in real time.</p>
+
+  		<p>To help keep humans in the loop, you can visualize your events using several different live updating graphs and tables.</p>
 
   		<figure class="chart">
   			<div class="chart__aspect-ratio">
@@ -41,48 +45,22 @@ title: Stream processing, for humans
   			</div>
   		</figure>
   		
-  		<p>For private channels, you can also create external triggers, such as email alerts or https requests.</p>
+  		<p>For private channels, you can also create external triggers, such as email alerts for out of control processes or calling webhooks to integrate with other systems.</p>
+
+  		<p><a href="{{ site.links.signup }}" class="btn btn-primary">Try it out</a></p>
   		
   		<br>
+  		<h2>Publish-Subscribe</h2>
+  		<p>Upstream was built to make sharing streams of data with others a cinch. You can make as many public channels as you like, allowing anyone to see your visuals or even fork the channel for themselves.</p>
+  		<p>If you want to keep streams to yourself, make them private and give fine-grain access to other users.</p>
+
+  		<br>
 		<h2>Join the beta!</h2>
-		<p>Upstream is getting started, <strong>we are constantly improving and value your feedback</strong>. Making an account with unlimited public channels is free (and always will be), but we also plan on offering pricing options once we leave beta.</p>
-		<!-- <table>
-			<tr>
-				<th></th>
-				<th>Free</th>
-				<th>Premium</th>
-			</tr>
-			<tr>
-				<td>Real-time Visuals</td>
-				<td>Unlimited</td>
-				<td>Unlimited</td>
-			</tr>
-			<tr>
-				<td>Data Transforms</td>
-				<td>Unlimited</td>
-				<td>Unlimited</td>
-			</tr>
-			<tr>
-				<td>Public Channels</td>
-				<td>Unlimited</td>
-				<td>Unlimited</td>
-			</tr>
-			<tr>
-				<td>Private Channels</td>
-				<td>1</td>
-				<td>Unlimited</td>
-			</tr>
-			<tr>
-				<td>External Triggers</td>
-				<td>On private channels</td>
-				<td>Unlimited</td>
-			</tr>
-		</table> -->
-		<p>During the beta, you can also make a <strong>free private channel</strong> when you sign up for an account!</p>
+		<p>Upstream is getting started, <strong>we are constantly improving and value your feedback</strong>. Making an account with unlimited public channels is free (and always will be), but we also plan on offering pricing options once we leave beta. During the beta, you can make a free private channel when you sign up for an account.</p>
 		<p>
-			<a href="{{ sites.links.signup }}" class="btn btn-primary">Sign up</a>
-			<a href="{{ sites.links.docs }}" class="btn btn-default">View Documentation</a>
-			<a href="{{ sites.links.contact }}" class="btn btn-default">Email Us</a>
+			<a href="{{ site.links.signup }}" class="btn btn-primary">Sign up</a>
+			<a href="{{ site.links.docs }}" class="btn btn-default">View Documentation</a>
+			<a href="{{ site.links.contact }}" class="btn btn-default">Email Us</a>
 		</p>
 
 	</div>
