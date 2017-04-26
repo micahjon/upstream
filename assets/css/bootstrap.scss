@@ -249,32 +249,39 @@ a {
 }
 
 /* Embedded chart (preserves aspect ratio irregardless of width) */
-.chart {
+.chart-container {
 	margin: 1em -20px;
 	padding-bottom: .5em;
-	max-width: 100%;
 }
-.chart__aspect-ratio {
-	position: relative;
-	padding-bottom: 66%;
-	width: 100%;
-}
-.chart__iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
+// .chart__aspect-ratio {
+// 	position: relative;
+// 	padding-bottom: 66%;
+// 	width: 100%;
+// 	height: 0;
+// 	border: 1px solid red;
+// 	overflow: hidden;
+// }
+// .chart__iframe {
+// 	display: block;
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// 	max-width: 400px;
+// 	margin: 0;
+// 	border: 1px solid blue;
+// 	overflow: hidden;
+// }
 @media (min-width: 420px) {
-	.chart {
+	.chart-container {
 		margin: 1em 0;
 		padding: .5em;
 		box-shadow: 0 3px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 	}
 }
 @media (min-width: 800px) {
-	.chart {
+	.chart-container {
 		margin: 1em -2em;
 		padding: 1em 2em;
 		border-radius: 3px;

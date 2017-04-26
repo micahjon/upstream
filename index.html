@@ -37,12 +37,46 @@ title: Stream processing, for humans
 
   		<p>To help keep people in the loop, you can visualize your events using several different live updating graphs and tables.</p>
 
-  		<figure class="chart">
-  			<div class="chart__aspect-ratio">
-  				<iframe class="chart__iframe" scrolling='no' frameBorder='0' title="Upstream embedded cart demo" src='https://embed.upstreamapp.io/?profile=lucasmg&channel=upstream-monitor&visual=CPU History'></iframe>
-  			</div>
-  		</figure>
-  		
+  		<div class="chart-container">
+  			<div id="chart-placeholder"></div>
+			<iframe id="chart-iframe" class="chart" width="320" height="200" scrolling="no" frameBorder="0" title="Upstream embedded cart demo" src="https://embed.upstreamapp.io/?profile=lucasmg&channel=upstream-monitor&visual=CPU History"></iframe>
+  		</div>
+		<script>
+		!function()
+		{
+			var placeholder = document.getElementById('chart-placeholder'),
+				iframe = document.getElementById('chart-iframe');
+
+			window.addEventListener('resize', debounce( function()
+			{
+				resizeChart();
+			}, 200 ));
+
+			function resizeChart() 
+			{
+				var width = placeholder.offsetWidth;
+				iframe.style.width = width + 'px';
+				iframe.style.height = parseInt(width / 1.5) + 'px';
+			}
+			resizeChart();
+
+			function debounce(func, wait) {
+				var timeout;
+				return function()
+				{
+					var context = this,
+					args = arguments;
+					var later = function() {
+						timeout = null;
+						func.apply(context, args);
+					};
+					clearTimeout(timeout);
+					timeout = setTimeout(later, wait);
+				};
+			}
+		}();
+		</script>
+
   		<p>For private channels, you can also create external triggers, such as email alerts for out of control processes or calling webhooks to integrate with other systems.</p>
 
   		<p><a href="{{ site.links.signup }}" class="btn btn-primary">Try it out</a></p>
