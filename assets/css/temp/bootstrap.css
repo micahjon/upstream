@@ -8,7 +8,7 @@
   font-family: 'Alegreya Sans';
   font-style: normal;
   font-weight: 700;
-  src: local("Alegreya Sans Bold"), local("AlegreyaSans-Bold"), url("/upstream/assets/fonts/alegreya-sans-v3-latin-700.woff2") format("woff2"), url("/upstream/assets/fonts/alegreya-sans-v3-latin-700.woff") format("woff");
+  src: local("Alegreya Sans Bold"), local("AlegreyaSans-Bold"), url("/assets/fonts/alegreya-sans-v3-latin-700.woff2") format("woff2"), url("/assets/fonts/alegreya-sans-v3-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
 /* noto-sans-regular - latin */
@@ -16,7 +16,7 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  src: local("Noto Sans"), local("NotoSans"), url("/upstream/assets/fonts/noto-sans-v6-latin-regular.woff2") format("woff2"), url("/upstream/assets/fonts/noto-sans-v6-latin-regular.woff") format("woff");
+  src: local("Noto Sans"), local("NotoSans"), url("/assets/fonts/noto-sans-v6-latin-regular.woff2") format("woff2"), url("/assets/fonts/noto-sans-v6-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
 /* noto-sans-700 - latin */
@@ -24,7 +24,7 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
-  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url("/upstream/assets/fonts/noto-sans-v6-latin-700.woff2") format("woff2"), url("/upstream/assets/fonts/noto-sans-v6-latin-700.woff") format("woff");
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url("/assets/fonts/noto-sans-v6-latin-700.woff2") format("woff2"), url("/assets/fonts/noto-sans-v6-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
 /* Colors Scheme 1: http://colorhunt.co/c/63246 */

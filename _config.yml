@@ -27,7 +27,7 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 paginate: 20
-baseurl: "/upstream/"
+baseurl: "/"
 name: "Upstream"
 domain_name: http://upstreamapp.io
 links:
